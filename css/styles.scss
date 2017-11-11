@@ -194,9 +194,9 @@ i.arrow-right {
   .navbar-links ul li {
     padding: 0;
     margin: 0 10px;
-    @include md {
-      margin: 0 0 0 84px;
-    }
+    // @include md {
+    //   margin: 0 0 0 84px;
+    // }
   }
   .navbar-links ul li a {
     font-size: 1em;
@@ -210,7 +210,7 @@ i.arrow-right {
   font-size: 1.25em;
   font-family: $headline-font;
   @include clearfix;
-  padding: 40px 30px 40px;
+  padding: 20px 30px;
   @include md {
     float: left;
     padding: 40px 0 40px $page-margin;
@@ -233,15 +233,11 @@ i.arrow-right {
 .navbar-links {
   display: none;
   background-color: $white;
-  // position: absolute;
-  // left: 0;
-  // right: 0;
-  // height: 50px;
   z-index: 10;
   padding-bottom: 20px;
   li {
     display: inline-block;
-    width: 27%;
+    width: 100%;
     text-align: center;
     a {
       font-size: 1.25em;
@@ -249,6 +245,9 @@ i.arrow-right {
     }
     @include md {
       width: auto;
+      margin-left: 44px;
+    }
+    @include lg {
       margin-left: 84px;
     }
   }
@@ -314,8 +313,9 @@ i.arrow-right {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 100px;
+  margin-top: 64px;
   @include md {
+    margin-top: 100px;
     height: 600px;
     background: $gold url('../img/hero-v2-xl.jpg');
   }

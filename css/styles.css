@@ -158,9 +158,6 @@ i.arrow-right {
   .navbar.collapsed .navbar-links ul li {
     padding: 0;
     margin: 0 10px; }
-    @media (min-width: 992px) {
-      .navbar.collapsed .navbar-links ul li {
-        margin: 0 0 0 84px; } }
   .navbar.collapsed .navbar-links ul li a {
     font-size: 1em; }
   @media (min-width: 992px) {
@@ -170,7 +167,7 @@ i.arrow-right {
 .nav-brand {
   font-size: 1.25em;
   font-family: "Montserrat", helvetica, arial, sans-serif;
-  padding: 40px 30px 40px; }
+  padding: 20px 30px; }
   .nav-brand::after {
     content: "";
     display: table;
@@ -198,7 +195,7 @@ i.arrow-right {
   padding-bottom: 20px; }
   .navbar-links li {
     display: inline-block;
-    width: 27%;
+    width: 100%;
     text-align: center; }
     .navbar-links li a {
       font-size: 1.25em;
@@ -206,6 +203,9 @@ i.arrow-right {
     @media (min-width: 992px) {
       .navbar-links li {
         width: auto;
+        margin-left: 44px; } }
+    @media (min-width: 1200px) {
+      .navbar-links li {
         margin-left: 84px; } }
   @media (min-width: 992px) {
     .navbar-links {
@@ -264,9 +264,10 @@ i.arrow-right {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 100px; }
+  margin-top: 64px; }
   @media (min-width: 992px) {
     #hero-section {
+      margin-top: 100px;
       height: 600px;
       background: #e3c68b url("../img/hero-v2-xl.jpg"); } }
 
