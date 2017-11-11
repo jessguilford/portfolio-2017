@@ -310,13 +310,14 @@ i.arrow-right {
 }
 
 #hero-section {
-  background: $gold url('../img/hero-v2-xl.jpg');
+  background: $gold url('../img/hero-v2-sm.jpg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 100px;
   @include md {
     height: 600px;
+    background: $gold url('../img/hero-v2-xl.jpg');
   }
 }
 
@@ -648,11 +649,12 @@ i.arrow-right {
 }
 
 .portfolio-item.second {
+  background-color: $black;
   .item-description {
-    // background-color: $black;
+    background-color: $black;
     color: $ivory;
     p {
-      // color: $ivory;
+      color: $ivory;
     }
     @include md {
       width: 50%;
@@ -675,6 +677,9 @@ i.arrow-right {
         color: $black;
       }
     }
+  }
+  @include md {
+    // background-color: $ivory;
   }
 }
 
