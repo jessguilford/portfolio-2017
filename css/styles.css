@@ -167,7 +167,7 @@ i.arrow-right {
 .nav-brand {
   font-size: 1.25em;
   font-family: "Montserrat", helvetica, arial, sans-serif;
-  padding: 20px 30px; }
+  padding: 20px 20px; }
   .nav-brand::after {
     content: "";
     display: table;

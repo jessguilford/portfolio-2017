@@ -8,6 +8,12 @@ $(document).ready(function() {
     $('.navbar-links').slideToggle();
   });
 
+  if ($(window).width() < 992) {
+    $(".navbar-links li a").click(function() {
+      $('.navbar-links').slideToggle();
+    });
+  }
+
   setDivHeight();
 
   $(".slider-knob").click(function() {
