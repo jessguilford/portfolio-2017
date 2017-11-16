@@ -26,13 +26,13 @@ p {
   line-height: 125%;
 }
 
-h1 {
+h1, h2 {
   font-size: 1.875em;
   margin: .25em auto;
   font-weight: 400;
   font-family: $headline-font;
 }
-h2 {
+h3 {
   font-size: 1.5em;
   margin: .5em auto;
   font-weight: 400;
@@ -69,7 +69,7 @@ ul {
 header {
   padding: 30px 0;
   background-color: $bone;
-  h1 {
+  h1, h2 {
     font-size: 1.5em;
     font-weight: 400;
     margin: 0;
@@ -126,6 +126,19 @@ header {
   &:hover {
     background-color: $bronze;
     color: $ivory;
+  }
+}
+
+.button-black {
+  @include button;
+  border-color: $ivory;
+  color: $ivory;
+  background-color: $black;
+  transition: all .25s ease-in;
+  &:hover {
+    background-color: $ivory;
+    border-color: $black;
+    color: $black;
   }
 }
 
@@ -290,11 +303,14 @@ i.arrow-right {
       transform: translate(-50%, -50%);
     }
     h1 {
+      color: $white;
+    }
+    h2 {
       margin: 0 auto;
       font-weight: 700;
       color: $white;
     }
-    h2 {
+    h3 {
       font-size: 1.21em;
       margin: 0 auto;
       color: $white;
@@ -360,12 +376,12 @@ i.arrow-right {
 	width: 100%;
 	height: 100%;
 }
- .video-wrapper video {
-   width:100%;
-   height:auto;
-   display: block;
-   margin: 0 auto;
- }
+.video-wrapper video {
+  width:100%;
+  height:auto;
+  display: block;
+  margin: 0 auto;
+}
 .carousel {
   position: relative;
   height: 280px;
@@ -510,7 +526,7 @@ i.arrow-right {
         display: block;
       }
     }
-    h2 {
+    h3 {
       margin: 15px auto;
       display: none;
       font-weight: 700;
@@ -531,9 +547,6 @@ i.arrow-right {
     .button-bronze {
       margin-top: 20px;
       margin-bottom: 0;
-      -webkit-box-shadow: 0px 3px 11px 0px rgba(92,92,92,0.25);
-      -moz-box-shadow: 0px 3px 11px 0px rgba(92,92,92,0.25);
-      box-shadow: 0px 3px 11px 0px rgba(92,92,92,0.25);
       @include sm-only {
         display: inline-block;
         width: 40%;
@@ -563,7 +576,19 @@ i.arrow-right {
     background-color: $black;
     padding: 10px 0;
     position: relative;
-    h2 {
+    overflow: hidden;
+    img {
+      // max-width: 100%;
+      display: block;
+      margin: 7% auto;
+      height: 80%;
+      // left: 0;
+      // right: 0;
+      // position: absolute;
+      // top: 50%;
+      // transform: translateY(-50%);
+    }
+    h3 {
       font-size: 1.75em;
       text-align: center;
       @include md {
@@ -667,19 +692,37 @@ i.arrow-right {
     }
   }
   .item-slider {
-    h2 {
+    h3 {
       color: $ivory;
     }
     @include md {
       width: 50%;
       float: left;
-      h2 {
+      h3 {
         color: $black;
       }
     }
   }
   @include md {
     // background-color: $ivory;
+  }
+}
+
+/* Videos section */
+#videos-section {
+  header {
+    // background-color: $bronze;
+  }
+  h2 {
+    // color: $bone;
+  }
+  ul {
+    display: block;
+    padding-left: 0;
+  }
+  li {
+    display: inline-block;
+    width: 45%;
   }
 }
 
@@ -707,7 +750,7 @@ i.arrow-right {
 
 #resume-section {
   header {
-    background-color: $bone;
+    background-color: $bronze;
     @include clearfix;
   }
   .work-experience {

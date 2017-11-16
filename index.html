@@ -31,7 +31,7 @@
         <div class="masthead">
           <div>
             <h1>JESS GUILFORD</h1>
-            <h2>Web Developer</h2>
+            <h3>JavaScript Developer</h3>
           </div>
         </div>
       </div>
@@ -39,57 +39,97 @@
       <div class="container-row" id="about-section">
         <div class="jump" id="about"> </div>
         <header class="center-text">
-          <h1>ABOUT ME</h1>
-          <p>I'm a Portland-based web developer who specializes in Node.js. My previous experience in digital marketing ignited a passion for creating impactful web experiences, so I switched from writing copy &mdash; to writing code. Now I work as a developer at a digital agency, where I deliver client projects and build internal tools.</p>
+          <h2>ABOUT ME</h2>
+          <p>I'm a Portland-based developer with a focus on JavaScript/Node.js. My previous experience in digital marketing ignited a passion for creating impactful web experiences, so I switched from writing copy &mdash; to writing code. Now I work as a developer at a digital agency, where I deliver client projects and build internal tools.</p>
         </header>
       </div>
 
       <div class="container-row" id="portfolio-section">
         <div class="jump" id="portfolio"> </div>
         <header class="center-text">
-          <h1>PORTFOLIO</h1>
+          <h2>PORTFOLIO</h2>
         </header>
       </div>
 
       <div class="container-row portfolio-item first">
         <div class="item-slider">
-          <h2>Email templating with Handlebars - Node.js</h2>
-          <div class="video-wrapper">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Q0hVd9qaIFo" frameborder="0" gesture="media" allowfullscreen></iframe>
-          </div>
+          <h3>Email Generator - Oak Creek Trail</h3>
+          <a href="https://youtu.be/Q0hVd9qaIFo" target="_blank"><img src="img/email-gen.gif"></a>
         </div>
         <div class="item-description">
           <h5 class="decorative-label">{01}</h5>
-          <h2>Email templating with Handlebars - Node.js</h2>
-          <p>While working at Oak Creek Trail, I built an email generator that helped automate email creation. The email generator pulls information from the client's API, populates a handlebars template, then produces a ready-to-send email.</p>
-          <p>Technologies used include AWS Lambda, S3, and API Gateway.</p>
-          <a class="button-bronze" href="https://youtu.be/Q0hVd9qaIFo" target="_blank">WATCH ON YOUTUBE</a>
+          <h3>Email Generator - Oak Creek Trail</h3>
+          <p>While working at Oak Creek Trail, I built an email generator that automates the creation of certain kinds of client emails. The email generator pulls information from the client's API, populates a handlebars template, then produces a ready-to-send email.</p>
+          <p>Technologies used include Node.js, Handlebars, and AWS Lambda/S3/API Gateway.</p>
+          <a class="button-bronze" href="https://youtu.be/Q0hVd9qaIFo" target="_blank">WATCH DEMO ON YOUTUBE</a>
         </div>
       </div>
 
       <div class="container-row portfolio-item second">
         <div class="item-slider">
-          <h2>How to Composite Images with Jimp - Node.js</h2>
+          <h3>Finally Home - Oak Creek Trail</h3>
+          <a href="http://www.taylormorrison.com/new-homes/georgia/atlanta/finally-home" target="_blank"><img src="img/atl-finally-home.png"></a>
+        </div>
+        <div class="item-description">
+          <h5 class="decorative-label">{02}</h5>
+          <h3>Finally Home - Oak Creek Trail</h3>
+          <p>This page is part of a series of landing pages. I coded each page from a .psd mockup provided by a 3rd party agency. Technologies used include HTML, CSS, jQuery, Bootstrap, and a customized google map.</p>
+          <a class="button-bronze" href="http://www.taylormorrison.com/new-homes/georgia/atlanta/finally-home" target="_blank">VIEW LIVE</a>
+        </div>
+      </div>
+
+      <div class="container-row portfolio-item first">
+        <div class="item-slider">
+          <h3>LP Tracker - Oak Creek Trail</h3>
+          <a href="https://youtu.be/EDIbIMY26v0" target="_blank"><img src="img/lp-tracker.gif"></a>
+        </div>
+        <div class="item-description">
+          <h5 class="decorative-label">{03}</h5>
+          <h3>LP Tracker - Oak Creek Trail</h3>
+          <p>I created this web application for OCT in order to keep a record of various landing pages created for clients. The tracker consists of an Ember frontend with a backend that uses Node.js and PhantomJS to capture information about the page.</p>
+          <p>Technologies used include Node.js, EmberJS, PhantomJS, Firebase, and AWS Lambda/S3/API Gateway.</p>
+          <a class="button-bronze" href="https://youtu.be/EDIbIMY26v0" target="_blank">WATCH DEMO ON YOUTUBE</a>
+        </div>
+      </div>
+
+      <div class="container-row" id="videos-section">
+        <div class="jump" id="videos"> </div>
+        <header class="center-text">
+          <h2>VIDEO TUTORIALS</h2>
+          <ul>
+            <li>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Wk3gkFNC0s8" frameborder="0" allowfullscreen></iframe>
+            </li>
+            <li>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Wk3gkFNC0s8" frameborder="0" allowfullscreen></iframe>
+            </li>
+          </ul>
+        </header>
+      </div>
+
+      <!-- <div class="container-row portfolio-item second">
+        <div class="item-slider">
+          <h3>How to Composite Images with Jimp - Node.js</h3>
           <div class="video-wrapper">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Wk3gkFNC0s8" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
         <div class="item-description">
           <h5 class="decorative-label">{02}</h5>
-          <h2>How to Composite Images with Jimp - Node.js</h2>
+          <h3>How to Composite Images with Jimp - Node.js</h3>
           <p>I created this tutorial showing how to composite (or combine) multiple images with jimp in node.js. This video walks the viewer through the process of installing jimp and using promises to work with jimp's composite() method.</p>
           <a class="button-bronze" href="https://youtu.be/Wk3gkFNC0s8" target="_blank">WATCH ON YOUTUBE</a>
           <a class="button-bronze" href="https://github.com/jessguilford/how-to-composite-with-jimp" target="_blank">VIEW PROJECT CODE</a>
         </div>
-      </div>
+      </div> -->
 
       <div class="container-row" id="resume-section">
         <div class="jump" id="resume"> </div>
         <header class="center-text">
-          <h1>RESUME</h1>
+          <h2>RESUME</h2>
           <div class="content">
-            <a class="button-bronze" href="https://www.linkedin.com/in/jessie-guilford/" target="_blank">VIEW LINKEDIN</a>
-            <a class="button-bronze" href="media/jguilford-resume2017.pdf" target="_blank">DOWNLOAD PDF RESUME</a>
+            <a class="button-black" href="https://www.linkedin.com/in/jessie-guilford/" target="_blank">VIEW LINKEDIN</a>
+            <a class="button-black" href="media/jguilford-resume2017.pdf" target="_blank">DOWNLOAD PDF RESUME</a>
           </content>
         </header>
       </div>
@@ -98,7 +138,7 @@
         <div class="jump" id="contact"> </div>
         <div class="masthead">
           <div>
-            <h1>CONTACT</h1>
+            <h2>CONTACT</h2>
             <p style="text-transform: none;">
               Send an email to: jess.guilford at gmail.com<br>
               Connect with me on <a href="https://www.linkedin.com/in/jessie-guilford/" target="_blank"><strong>linkedin</strong></a><br>
