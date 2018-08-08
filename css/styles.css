@@ -46,13 +46,16 @@ a {
   font-size: 1em;
   text-decoration: none; }
 
+p a {
+  color: #907155; }
+
 ul {
   padding-left: 0;
   list-style: none; }
 
 header {
   padding: 30px 0;
-  background-color: #e7e3e2; }
+  background-color: #e7e5e2; }
   header h1, header h2 {
     font-size: 1.5em;
     font-weight: 400;
@@ -293,7 +296,10 @@ i.arrow-right {
     #hero-section {
       margin-top: 100px;
       height: 600px;
-      background: #e3c68b url("../img/hero-v2-xl.jpg"); } }
+      background: #e3c68b url("../img/hero-v2-xl.jpg");
+      background-position: top center;
+      background-size: cover;
+      background-repeat: no-repeat; } }
 
 #video_background {
   display: none; }
@@ -317,11 +323,6 @@ i.arrow-right {
   /* 16:9 */
   margin: 20px;
   height: 0; }
-  @media (min-width: 992px) {
-    .video-wrapper {
-      top: 50%;
-      transform: translateY(-50%);
-      margin: 0 20px; } }
   @media (min-width: 1600px) {
     .video-wrapper {
       margin: 0; } }
@@ -505,9 +506,15 @@ i.arrow-right {
     position: relative;
     overflow: hidden; }
     .portfolio-item .item-slider img {
+      max-width: 100%;
       display: block;
       margin: 7% auto;
-      height: 80%; }
+      width: 652px; }
+      @media (min-width: 992px) {
+        .portfolio-item .item-slider img {
+          height: 80%;
+          max-width: none;
+          width: auto; } }
     .portfolio-item .item-slider h3 {
       font-size: 1.75em;
       text-align: center; }
@@ -604,7 +611,10 @@ i.arrow-right {
   padding-left: 0; }
 #videos-section li {
   display: inline-block;
-  width: 45%; }
+  width: 90%; }
+  @media (min-width: 767px) {
+    #videos-section li {
+      width: 50%; } }
 
 /* About */
 #about-section h1, #resume-section h1 {
@@ -621,7 +631,7 @@ i.arrow-right {
     width: 60%; } }
 
 #resume-section header {
-  background-color: #907155; }
+  background-color: #ffffff; }
   #resume-section header::after {
     content: "";
     display: table;
@@ -651,6 +661,8 @@ i.arrow-right {
   color: #ffffff; }
   #contact-section p {
     line-height: 150%; }
+  #contact-section p.disc {
+    font-size: .5em; }
   #contact-section a {
     color: #ffffff;
     line-height: 200%; }

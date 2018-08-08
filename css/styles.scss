@@ -57,6 +57,10 @@ a {
   text-decoration: none;
 }
 
+p a {
+  color: $bronze;
+}
+
 li {
 
 }
@@ -334,6 +338,10 @@ i.arrow-right {
     margin-top: 100px;
     height: 600px;
     background: $gold url('../img/hero-v2-xl.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
   }
 }
 
@@ -361,9 +369,10 @@ i.arrow-right {
   margin: 20px;
 	height: 0;
   @include md {
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0 20px;
+    // top: 50%;
+    // transform: translateY(-50%);
+    // margin: 0 20px;
+
   }
   @include xxl {
     margin: 0;
@@ -578,15 +587,20 @@ i.arrow-right {
     position: relative;
     overflow: hidden;
     img {
-      // max-width: 100%;
+      max-width: 100%;
       display: block;
       margin: 7% auto;
-      height: 80%;
+      width: 652px;
       // left: 0;
       // right: 0;
       // position: absolute;
       // top: 50%;
       // transform: translateY(-50%);
+      @include md {
+        height: 80%;
+        max-width: none;
+        width: auto;
+      }
     }
     h3 {
       font-size: 1.75em;
@@ -722,7 +736,11 @@ i.arrow-right {
   }
   li {
     display: inline-block;
-    width: 45%;
+    // width: 45%;
+    width: 90%;
+    @include sm {
+      width: 50%;
+    }
   }
 }
 
@@ -750,7 +768,7 @@ i.arrow-right {
 
 #resume-section {
   header {
-    background-color: $bronze;
+    background-color: $white;
     @include clearfix;
   }
   .work-experience {
@@ -787,6 +805,9 @@ i.arrow-right {
   color: $white;
   p {
     line-height: 150%;
+  }
+  p.disc {
+    font-size: .5em;
   }
   a {
     color: $white;
